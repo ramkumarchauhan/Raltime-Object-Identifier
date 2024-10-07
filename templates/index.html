@@ -1,0 +1,543 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Object Identifier</title>
+</head>
+<body>
+    <h1>Real-Time Object Identification</h1>
+    <img src="{{ url_for('video_feed') }}" width="640" height="480">
+</body>
+</html> -->
+
+<!-- --------------------------------------------------------------------------------------------- -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Object Identifier</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .video-container {
+            text-align: center;
+            margin: auto;
+            max-width: 800px;
+            border-radius: 10px;
+        }
+        img {
+            border: 2px solid #007bff;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="video-container">
+            <h1>Real-Time Object Identification</h1>
+            <img src="{{ url_for('video_feed') }}" class="img-fluid" alt="Video Feed">
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html> -->
+
+<!-- ------------------------------------------------------------------------------------------------- -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Object Detection</title>
+</head>
+<body>
+    <h1>Real-Time Object Detection with YOLOv5</h1>
+    <div>
+        <img id="video" src="{{ url_for('video_feed') }}" width="640" height="480">
+    </div>
+    <button id="captureBtn">Capture Image</button>
+    <script>
+        document.getElementById('captureBtn').onclick = function() {
+            let video = document.getElementById('video');
+            let canvas = document.createElement('canvas');
+            canvas.width = video.width;
+            canvas.height = video.height;
+            let context = canvas.getContext('2d');
+            context.drawImage(video, 0, 0, canvas.width, canvas.height);
+            let link = document.createElement('a');
+            link.download = 'captured_image.png';
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        };
+    </script>
+</body>
+</html> -->
+
+<!-- -------------------------------------------------------------------------------------- -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Object Identifier</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .video-container {
+            text-align: center;
+            margin: auto;
+            max-width: 800px;
+            border-radius: 10px;
+        }
+        img {
+            border: 2px solid #007bff;
+            border-radius: 5px;
+        }
+        #captureBtn {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="video-container">
+            <h1>Real-Time Object Identification</h1>
+            <img id="video" src="{{ url_for('video_feed') }}" class="img-fluid" alt="Video Feed">
+            <button id="captureBtn" class="btn btn-primary">Capture Image</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('captureBtn').onclick = function() {
+            let video = document.getElementById('video');
+            let canvas = document.createElement('canvas');
+            canvas.width = video.width;
+            canvas.height = video.height;
+            let context = canvas.getContext('2d');
+            context.drawImage(video, 0, 0, canvas.width, canvas.height);
+            let link = document.createElement('a');
+            link.download = 'captured_image.png';
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        };
+    </script>
+</body>
+</html> -->
+
+<!-- ---------------------------------------------------------------- -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Object Identifier</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .video-container {
+            text-align: center;
+            margin: auto;
+            max-width: 800px;
+            border-radius: 10px;
+        }
+        img {
+            border: 2px solid #007bff;
+            border-radius: 5px;
+        }
+        #captureBtn {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="video-container">
+            <h1>Real-Time Object Identification</h1>
+            <img id="video" src="{{ url_for('video_feed') }}" class="img-fluid" alt="Video Feed">
+            <button id="captureBtn" class="btn btn-primary">Capture Image</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('captureBtn').onclick = function() {
+            let video = document.getElementById('video');
+            let canvas = document.createElement('canvas');
+            canvas.width = video.width;
+            canvas.height = video.height;
+            let context = canvas.getContext('2d');
+            context.drawImage(video, 0, 0, canvas.width, canvas.height);
+            
+            // Get current date and time
+            let now = new Date();
+            let dateString = now.toISOString().replace(/:/g, '-').split('.')[0]; // Format as YYYY-MM-DDTHH-MM-SS
+            let filename = `IMG_${dateString}.png`; // Create filename
+            
+            let link = document.createElement('a');
+            link.download = filename;
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        };
+    </script>
+</body>
+</html> -->
+
+<!-- -------------------------------------------------------------------------------------------------------- -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Object Identifier</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        h1 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .video-container {
+            text-align: center;
+            margin: auto;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        img {
+            border: 2px solid #007bff;
+            border-radius: 5px;
+            width: 100%; /* Responsive width */
+            height: auto; /* Maintain aspect ratio */
+        }
+        #captureBtn, #downloadBtn {
+            margin-top: 20px;
+            width: 100%; /* Full width on mobile */
+        }
+        @media (min-width: 768px) {
+            #captureBtn, #downloadBtn {
+                width: auto; /* Default width for larger screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="video-container">
+            <h1>Real-Time Object Identification</h1>
+            <img id="video" src="{{ url_for('video_feed') }}" class="img-fluid" alt="Video Feed">
+            <button id="captureBtn" class="btn btn-primary">Capture Image</button>
+            <button id="downloadBtn" class="btn btn-success">Download Results</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('captureBtn').onclick = function() {
+            let video = document.getElementById('video');
+            let canvas = document.createElement('canvas');
+            canvas.width = video.width;
+            canvas.height = video.height;
+            let context = canvas.getContext('2d');
+            context.drawImage(video, 0, 0, canvas.width, canvas.height);
+            let now = new Date();
+            let dateString = now.toISOString().replace(/:/g, '-').split('.')[0];
+            let filename = `IMG_${dateString}.png`;
+            let link = document.createElement('a');
+            link.download = filename;
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        };
+
+        document.getElementById('downloadBtn').onclick = function() {
+            window.location.href = '/download_results';
+        };
+    </script>
+</body>
+</html> -->
+
+<!-- --------------------------------------------------------------------------------------- -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Object Identifier</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        h1 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .video-container {
+            text-align: center;
+            margin: auto;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        img {
+            border: 2px solid #007bff;
+            border-radius: 5px;
+            width: 100%;
+            height: auto;
+        }
+        #captureBtn, #downloadBtn, #downloadReportBtn {
+            margin-top: 20px;
+            width: 100%;
+        }
+        #chartContainer {
+            margin-top: 30px;
+        }
+        @media (min-width: 768px) {
+            #captureBtn, #downloadBtn {
+                width: auto; /* Default width for larger screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="video-container">
+            <h1>Real-Time Object Identification</h1>
+            <img id="video" src="{{ url_for('video_feed') }}" class="img-fluid" alt="Video Feed">
+            <button id="captureBtn" class="btn btn-primary">Capture Image</button>
+            <button id="downloadBtn" class="btn btn-success">Download Results</button>
+            <button id="downloadReportBtn" class="btn btn-warning">Download Report</button>
+        </div>
+        <div id="chartContainer">
+            <canvas id="detectionChart" width="400" height="200"></canvas>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('captureBtn').onclick = function() {
+            let video = document.getElementById('video');
+            let canvas = document.createElement('canvas');
+            canvas.width = video.width;
+            canvas.height = video.height;
+            let context = canvas.getContext('2d');
+            context.drawImage(video, 0, 0, canvas.width, canvas.height);
+            let now = new Date();
+            let dateString = now.toISOString().replace(/:/g, '-').split('.')[0];
+            let filename = `IMG_${dateString}.png`;
+            let link = document.createElement('a');
+            link.download = filename;
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        };
+
+        document.getElementById('downloadBtn').onclick = function() {
+            window.location.href = '/download_results';
+        };
+
+        document.getElementById('downloadReportBtn').onclick = function() {
+            window.location.href = '/download_report';
+        };
+
+        // Function to update the detection chart
+        function updateChart() {
+            $.getJSON('/detection_counts', function(data) {
+                const labels = Object.keys(data);
+                const counts = Object.values(data);
+
+                const ctx = document.getElementById('detectionChart').getContext('2d');
+                new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            label: '# of Detections',
+                            data: counts,
+                            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+            });
+        }
+
+        // Update the chart periodically
+        setInterval(updateChart, 5000); // Update every 5 seconds
+    </script>
+</body>
+</html>
+
+<!-- -------------------------------------------------------------------------------- -->
+
+<!-- <DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Object Identifier</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .video-container {
+            display: flex; /* Use flexbox for layout */
+            justify-content: space-between; /* Space between items */
+            align-items: center; /* Center items vertically */
+            margin: auto;
+            max-width: 800px;
+            border-radius: 10px;
+        }
+        img {
+            border: 2px solid #007bff;
+            border-radius: 5px;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column; /* Stack buttons vertically */
+            margin-left: 20px; /* Space between video and buttons */
+        }
+        .button-container button {
+            margin-bottom: 10px; /* Space between buttons */
+        }
+        @media (min-width: 768px) {
+            #captureBtn, #downloadBtn {
+                width: auto; /* Default width for larger screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="video-container">
+            <h1>Real-Time Object Identification</h1>
+            <img id="video" src="{{ url_for('video_feed') }}" class="img-fluid" alt="Video Feed">
+            <button id="captureBtn" class="btn btn-primary">Capture Image</button>
+            <button id="downloadBtn" class="btn btn-success">Download Results</button>
+            <button id="downloadReportBtn" class="btn btn-warning">Download Report</button>
+        </div>
+        <div id="chartContainer">
+            <canvas id="detectionChart" width="400" height="200"></canvas>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('captureBtn').onclick = function() {
+            let video = document.getElementById('video');
+            let canvas = document.createElement('canvas');
+            canvas.width = video.width;
+            canvas.height = video.height;
+            let context = canvas.getContext('2d');
+            context.drawImage(video, 0, 0, canvas.width, canvas.height);
+            let now = new Date();
+            let dateString = now.toISOString().replace(/:/g, '-').split('.')[0];
+            let filename = `IMG_${dateString}.png`;
+            let link = document.createElement('a');
+            link.download = filename;
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        };
+
+        document.getElementById('downloadBtn').onclick = function() {
+            window.location.href = '/download_results';
+        };
+
+        document.getElementById('downloadReportBtn').onclick = function() {
+            window.location.href = '/download_report';
+        };
+
+        // Function to update the detection chart
+        function updateChart() {
+            $.getJSON('/detection_counts', function(data) {
+                const labels = Object.keys(data);
+                const counts = Object.values(data);
+
+                const ctx = document.getElementById('detectionChart').getContext('2d');
+                new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            label: '# of Detections',
+                            data: counts,
+                            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+            });
+        }
+
+        // Update the chart periodically
+        setInterval(updateChart, 5000); // Update every 5 seconds
+    </script>
+</body>
+</html> -->
